@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display: inline;
+}
+
+nav {
+    padding: 15px 15px 15px 0px;
+}
+
+svg {
+    height: 17px;
+    width: 17px;
+    position: relative;
+    fill:gray;
+    padding-left: 15px;
+}
+
+.right {
+    float: right;
+}
+
+#profile {
+    top: -6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    position: relative;
+    padding-left: 15px;
+}
+
+#profile-picture {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    display: inline-block;
+    background-image: url(img/trevor.JPG);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+.list-link {
+    text-decoration: none;
+    color: #000;
+    opacity: 0.75;
+    padding-left: 15px;
+}
