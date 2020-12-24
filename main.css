@@ -1,3 +1,11 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
 body {
     font-family: Arial, sans-serif;
     font-size: 13px;
@@ -14,7 +22,15 @@ li {
 }
 
 nav {
+    height: 2vh;
+    width: 100%;
     padding: 15px 15px 15px 0px;
+    box-sizing: border-box;
+}
+
+main {
+    
+    justify-content: center;
 }
 
 svg {
@@ -25,6 +41,80 @@ svg {
     padding-left: 15px;
 }
 
+footer {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    align-self: flex-end;
+    background-color: #f2f2f2;
+    border-top: 1px solid #dadce0;
+}
+
+button {
+    background-image: -webkit-linear-gradient(top, #f5f5f5,#f1f1f1);
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    color: #3b3d3f;
+    border-radius: 4px;
+    line-height: 27px;
+    font-family: Arial;
+    font-size: 14px;
+    height: 36px;
+    min-width: 54px;
+    padding: 0 16px;
+    margin: 11px 4px;
+    cursor: pointer;
+
+}
+
+button:hover {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+form {
+    width: 584px;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+.main-input {
+    margin-top: 30px;
+}
+
+.main-submit {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 25px;
+    
+}
+
+.footer-list {
+    width: 100%;
+}
+
+.page-container {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    justify-items: center;
+    height: 100%;
+}
+
 .right {
     float: right;
 }
@@ -33,7 +123,6 @@ svg {
     top: -6px;
     width: 32px;
     height: 32px;
-    border-radius: 50%;
     position: relative;
     padding-left: 15px;
 }
@@ -41,16 +130,24 @@ svg {
 #profile-picture {
     height: 100%;
     width: 100%;
-    border-radius: 50%;
     display: inline-block;
+    border-radius: 50%;
     background-image: url(img/trevor.JPG);
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat
 }
+
+#settings {
+    margin-right: 15px;
+}
+
 .list-link {
     text-decoration: none;
     color: #000;
     opacity: 0.75;
     padding-left: 15px;
+}
+
+.list-link:hover {
+    text-decoration: underline;
 }
